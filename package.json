@@ -1,7 +1,7 @@
 {
   "name": "callers-path",
-  "version": "0.9.1",
-  "description": "v8 callsite caller's path with knobs",
+  "version": "0.9.2",
+  "description": "caller's path with knobs",
   "main": "index.js",
   "engines": {
     "node": ">= 0.9.0"
