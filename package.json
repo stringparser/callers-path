@@ -1,27 +1,27 @@
 {
-  "name": "batch-these",
-  "version": "0.7.14",
-  "description": "batch with ease",
+  "name": "callers-path",
+  "version": "0.9.0",
+  "description": "v8 callsite caller's path with knobs",
   "main": "index.js",
   "engines": {
     "node": ">= 0.9.0"
   },
-  "repository": "stringparser/batch-these",
+  "repository": "stringparser/callers-path",
   "keywords": [
-    "stdout",
-    "batch",
-    "module",
-    "subscribe",
-    "retrieve"
+    "v8",
+    "callsite",
+    "callsites",
+    "path",
+    "caller"
   ],
   "author": {
     "name": "Javier Carrillo"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stringparser/batch-these/issues"
+    "url": "https://github.com/stringparser/callers-path/issues"
   },
-  "homepage": "https://github.com/stringparser/batch-these",
+  "homepage": "https://github.com/stringparser/callers-path",
   "devDependencies": {
     "jshint": "*",
     "jshint-stylish": "*",
@@ -29,12 +29,11 @@
     "should": "*"
   },
   "dependencies": {
-    "callsite-tracker": "^1.0.16",
-    "stdout-monkey": "^1.0.20",
-    "utils-type": "^0.1.33"
+    "utils-type": "^0.1.34",
+    "v8-callsites": "^1.0.30"
   },
   "scripts": {
-    "lint": "jshint lib test index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules",
-    "test": "npm run-script lint && mocha --reporter spec"
+    "lint": "jshint test index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules",
+    "test": "npm run-script lint && mocha --reporter spec test/_main.js"
   }
 }
