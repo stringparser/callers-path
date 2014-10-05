@@ -12,15 +12,6 @@
 
 ## usage
 
-example/moduleA.js
-
-```js
-var moduleB = require('./moduleB');
-module.exports = function(){
-  console.log('from moduleA, moduleB says', moduleB());
-};
-```
-
 example/moduleB.js
 ```js
 var callerPath = require('../');
@@ -29,6 +20,15 @@ module.exports = function(){
   console.log(callerPath());
 };
 // => example/moduleA.js
+```
+
+example/moduleA.js
+
+```js
+var moduleB = require('./moduleB');
+module.exports = function(){
+  console.log('from moduleA, moduleB says', moduleB());
+};
 ```
 
 ### documentation
