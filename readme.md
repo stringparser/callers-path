@@ -12,15 +12,23 @@
 
 ## usage
 
-```js
-var path = require('path');
-var callerPath = require('callers-path');
+example/moduleA.js
 
-// test/fileName.js
+```js
+var moduleB = require('./moduleB');
 module.exports = function(){
-  console.log( path.relative(process.cwd, callerPath) );
-  // => test/fileName.js
-}
+  console.log('from moduleA, moduleB says', moduleB());
+};
+```
+
+example/moduleB.js
+```js
+var callerPath = require('../');
+
+module.exports = function(){
+  console.log(callerPath());
+};
+// => example/moduleA.js
 ```
 
 ### documentation
