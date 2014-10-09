@@ -29,10 +29,10 @@
     "should": "*"
   },
   "dependencies": {
-    "v8-callsites": "^1.0.30"
+    "v8-callsites": "^1.0.34"
   },
   "scripts": {
     "lint": "jshint test index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules",
-    "test": "npm run-script lint && mocha --reporter spec test/_main.js"
+    "test": "npm run-script lint && mocha test/_main.js"
   }
 }
