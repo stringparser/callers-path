@@ -4,7 +4,7 @@ var callsites = require('v8-callsites');
 
 function callersPath(origin){
 
-  var stack = callsites(2, origin || callersPath);
+  var stack = callsites(origin ? 1 : 2, origin || callersPath);
   return stack[1].getFileName();
 }
 
