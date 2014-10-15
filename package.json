@@ -1,6 +1,6 @@
 {
   "name": "callers-path",
-  "version": "0.9.9",
+  "version": "0.9.10",
   "description": "caller's path with knobs",
   "main": "index.js",
   "engines": {
