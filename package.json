@@ -24,7 +24,6 @@
   "homepage": "https://github.com/stringparser/callers-path",
   "devDependencies": {
     "jshint": "*",
-    "jshint-stylish": "*",
     "mocha": "*",
     "should": "*"
   },
@@ -32,7 +31,7 @@
     "v8-callsites": "^1.0.34"
   },
   "scripts": {
-    "lint": "jshint test index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules",
+    "lint": "jshint test index.js",
     "test": "npm run-script lint && mocha test/_main.js"
   }
 }
