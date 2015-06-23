@@ -1,4 +1,4 @@
-# callers-path [<img alt="progressed.io" src="http://progressed.io/bar/99" align="right"/>](https://github.com/fehmicansaglam/progressed.io)
+# callers-path 
 
 [<img alt="build" src="http://img.shields.io/travis/stringparser/callers-path/master.svg?style=flat-square" align="left"/>](https://travis-ci.org/stringparser/callers-path/builds)
 [<img alt="NPM version" src="http://img.shields.io/npm/v/callers-path.svg?style=flat-square" align="right"/>](http://www.npmjs.org/package/callers-path)
